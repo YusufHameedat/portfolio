@@ -192,6 +192,7 @@ p {
     url("./image/bghero.png");
   background-size: cover;
   background-repeat: no-repeat;
+  animation: BackgroundGradient 20s ease infinite;
 }
 
 .hi {
@@ -692,6 +693,12 @@ p {
 }
 
 /* touch up designs */
+@keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
 .kenburns-top {
   -webkit-animation: kenburns-top 10s ease-in;
   animation: kenburns-top 10s ease-in;
@@ -735,7 +742,7 @@ p {
     -webkit-transform-origin: top;
     transform-origin: top;
   }
-}
+} 
 
 /* text hi */
 .shake-lr {
@@ -1133,8 +1140,8 @@ p {
   }
 
   #prof-img {
-    width: 110px;
-    height: 110px;
+    width: 140px;
+    height: 140px;
   }
 
   .profile h3 {
@@ -1315,6 +1322,11 @@ p {
     margin: 0 0 16px;
   }
 
+  #todo {
+    width: 20rem;
+    height:10rem;
+  } 
+
   .proj-img img,
   .proj2 img,
   .proj1 img {
@@ -1368,4 +1380,7 @@ p {
     line-height: 1.6;
     font-size: 0.95rem;
   }
+
 } 
+
+

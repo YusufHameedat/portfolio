@@ -107,3 +107,14 @@
   width: 300px;
   border-radius: 16px;
 }
+
+#img-todo {
+  height:10rem;
+}
+
+@media (max-width:480px) {
+  #todo {
+    width: 20rem;
+    height:10rem;
+  } 
+}
